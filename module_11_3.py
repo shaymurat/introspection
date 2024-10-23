@@ -1,5 +1,6 @@
 import inspect
 
+
 def introspection_info(obj):
     '''возвращает словарь содержащий тип, модуль, атрибуты и методы объекта'''
     info = {'type': type(obj).__name__,
@@ -19,6 +20,7 @@ def introspection_info(obj):
         info['module'] = obj_module.__name__
 
     return info
+
 
 if __name__ == '__main__':
     from pprint import pprint
